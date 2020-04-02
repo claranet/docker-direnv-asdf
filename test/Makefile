@@ -21,7 +21,6 @@ test:
 		-v ~/.aws/credentials:/tmp/aws-credentials:ro \
 		-e AWS_SHARED_CREDENTIALS_FILE=/tmp/aws-credentials \
 		-v /etc/passwd:/etc/passwd:ro \
-		-v /etc/group:/etc/group:ro \
 		-u $$(id -u):$$(id -g) \
 		-w /src/subdir \
 		$(tag) \
